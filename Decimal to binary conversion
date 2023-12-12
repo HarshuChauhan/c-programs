@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int n,r,s,store=0,p=1,a;
+    printf("Enter a number");
+    scanf("%d",&n);
+    a=n;
+    while(n>0)
+    {
+        r=n%2;
+        s=p*r;
+        store=store+s;
+        p=p*10;
+        n=n/2;
+    }
+    printf("%d is the binary of %d",store,a);
+    return 0;
+}
